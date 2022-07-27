@@ -1,0 +1,1 @@
+National First Prize in 2019 Contemporary Undergraduate Mathematical Contest in Modeling

@@ -1,0 +1,67 @@
+[100:2000,100]
+make_scorer(roc_auc_score, needs_threshold=True) {'n_estimators': 500} 0.6219029921860111
+[400,600,10]
+make_scorer(roc_auc_score, needs_threshold=True) {'n_estimators': 530} 0.6231322660567944
+[525,535,1]
+make_scorer(roc_auc_score, needs_threshold=True) {'n_estimators': 529} 0.6231322660567944
+
+
+[9000,10000,100]
+make_scorer(roc_auc_score, needs_threshold=True) {'n_estimators': 9800} 0.609229083285687
+
+
+
+[1000,10100,100]
+make_scorer(roc_auc_score, needs_threshold=True) {'n_estimators': 10000} 0.6079473985134362
+
+[100,10010,100]
+make_scorer(roc_auc_score, needs_threshold=True) {'n_estimators': 500} 0.6219029921860111
+
+
+
+
+
+
+{'max_depth': 1, 'min_samples_split': 110} 0.636969696969697
+{'max_depth': 3, 'min_samples_split': 110} 0.636969696969697
+{'min_samples_leaf': 10, 'min_samples_split': 20} 0.6354882154882155
+{'min_samples_leaf': 20, 'min_samples_split': 110} 0.636969696969697
+gsearch3 = GridSearchCV(estimator = RandomForestClassifier(n_estimators= 529,
+   max_features='sqrt' ,oob_score=True, random_state=10),
+   param_grid = param_test3, scoring='roc_auc',iid=False, cv=5)
+{'min_samples_leaf': 14, 'min_samples_split': 108} 0.6341414141414141
+{'min_samples_leaf': 2, 'min_samples_split': 86} 0.654006734006734
+
+gsearch3 = GridSearchCV(estimator = RandomForestClassifier(n_estimators= 529,
+   max_features='sqrt' ,oob_score=True, random_state=10),
+   param_grid = param_test3, scoring='roc_auc',iid=False, cv=5)
+{'min_samples_leaf': 1, 'min_samples_split': 88} 0.652053872053872
+
+
+
+
+gsearch2 = GridSearchCV(estimator = RandomForestClassifier(n_estimators= 529
+                                                           ,max_features='sqrt' ,oob_score=True, random_state=10),
+{'max_depth': 5, 'min_samples_split': 90} 0.6501683501683502
+
+
+gsearch2 = GridSearchCV(estimator = RandomForestClassifier(n_estimators= 529,min_samples_leaf = 20,max_features='sqrt' ,oob_score=True, random_state=10),
+   param_grid = param_test2, scoring='roc_auc',iid=False, cv=5)
+{'max_depth': 3, 'min_samples_split': 110} 0.636969696969697
+
+
+
+参数调优 最终结果:
+n_estimators=529,min_samples_split=88,min_samples_leaf=1,max_depth=5,min_samples_leaf=1
+
+
+
+
+
+
+
+
+
+
+
+

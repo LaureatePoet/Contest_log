@@ -1,0 +1,14 @@
+fx=ln y
+
+Linear model Poly1:
+     f(x) = p1*x + p2
+Coefficients (with 95% confidence bounds):
+       p1 =    0.003898  (0.003873, 0.003924)
+       p2 =        7.31  (7.307, 7.313)
+
+Goodness of fit:
+  SSE: 0.09327
+  R-square: 0.9955
+  Adjusted R-square: 0.9954
+  RMSE: 0.01529
+
